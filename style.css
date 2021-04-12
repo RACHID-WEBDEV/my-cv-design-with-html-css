@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+
+
+.img{
+  display: block;
+    margin: auto;
+}
+.name{
+  text-align: center;
+  color: white;
+  margin-top: -40px;
+  font-size: 30px;
+}
+.subname{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: -28px;
+}
+h2,i{
+  font-size: 32px;
+  color: #fff;
+  margin-left: 10px;
+}
+.about{
+text-align: justify-all;
+color: #fff;
+margin:10px;
+padding: 0px 10px; 
+
+}
+ul, li{
+  list-style-type: none;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+.icon{
+  margin-right: 10px;
+  font-size: 30px;
+}
+.icontext{
+  color: #fff;
+ font-size: 18px;
+
+}
+.progresstext{
+  color: #fff;
+  font-size: bold
+}
+.container {
+            background-color: #fff;
+            width: 80%;
+            border-radius: 15px;
+        }
+      
+        .skill {
+            background-color: #6b6d6f;
+            color: white;
+            padding: 2%;
+            text-align: right;
+            font-size: 18px;
+            border-radius: 15px;
+        }
+      
+        .html {
+            width: 90%;
+        }
+         .laravel {
+            width: 75%;
+        }
+         .git {
+            width: 80%;
+        }
+         .php {
+            width: 80%;
+        }
+         .javascript {
+            width: 70%;
+        }
+         .jquery {
+            width: 60%;
+        }
+         .wordpress {
+            width: 90%;
+        }
+
+.passion{
+   text-align: left;
+  color: #fff;
+  font-size: 20px;
+  margin-top: px;
+}
+
+/* Main column */
+
+.mainh2{
+  font-size: 32px;
+  color: #000;
+  margin-left: 10px;
+}
+.mainicon{
+  font-size: 32px;
+  color: #000;
+  margin-left: 10px;
+}
+.mainh3{
+  margin-left: 25px;
+  padding-bottom: 2px;
+}
+#language{
+  margin-left: -30px;
+  margin-top: -40px;
+}
+.lang{
+  text-align: center;
+  margin-left: -520px;
+  margin-top: -130px
+}
+.lang2{
+  text-align: center;
+  margin-left: -60px;
+  margin-top: -50px
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #2556a5;
+  padding: 20px;
+}
+.main {
+  flex: 70%;
+  background-color: #dcdcdc;
+  padding: 20px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
