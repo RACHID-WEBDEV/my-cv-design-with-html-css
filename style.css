@@ -9,9 +9,7 @@ body {
 }
 
 
-
-
-.img{
+.myphoto{
   display: block;
     margin: auto;
 }
@@ -123,14 +121,31 @@ ul, li{
 }
 .lang{
   text-align: center;
-  margin-left: -520px;
+  margin-left: -475px;
   margin-top: -130px
 }
 .lang2{
   text-align: center;
-  margin-left: -60px;
+  margin-left: -20px;
   margin-top: -50px
 }
+
+
+/*css responsive start here*/
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+   /* padding: 15px;*/
+}
+
 
 /* Column container */
 .row {  
@@ -141,21 +156,95 @@ ul, li{
 
 /* Sidebar/left column */
 .side {
-  flex: 30%;
   background-color: #2556a5;
   padding: 20px;
 }
 .main {
-  flex: 70%;
   background-color: #dcdcdc;
   padding: 20px;
 }
 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+     .myphoto{
+      height: 250px;
+     width:250px; 
+     
+     display: block;
+      margin: auto;
   }
+    .name{
+  text-align: center;
+  color: white;
+  margin-top: -40px;
+  font-size: 22px;
+  }
+  .subname{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: -22px;
+  }
+  h2,i{
+    font-size: 26px;
+    color: #fff;
+    margin-left: 8px;
+  }
+  .passion{
+   text-align: left;
+    color: #fff;
+    font-size: 16px;
+    margin-top: px;
+  }
+  .mainh2{
+  font-size: 22px;
+  color: #000;
+  margin-left: 10px;
 }
+.mainicon{
+  font-size: 16px;
+  color: #000;
+  margin-left: 10px;
+}
+.mainh3{
+  margin-left: 25px;
+  padding-bottom: 2px;
+}
+#language{
+  margin-left: -30px;
+  margin-top: -40px;
+  width: 340px;
+}
+  .lang{
+    font-size: 10px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -85px
+  }
+  .lang2{
+    font-size: 10px;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: -40px
+  }
+
+}
+
+
